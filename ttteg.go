@@ -17,6 +17,7 @@ type gameBoard struct {
 	player string
 }
 
+// playMove
 func playMove(gb gameBoard, row, col int) gameBoard {
 	gb.board[row-1][col-1] = gb.player
 	return gb
